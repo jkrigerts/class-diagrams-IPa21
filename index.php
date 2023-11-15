@@ -1,14 +1,16 @@
 <?php
 include "Car.php";
 include "ElectricMotor.php";
-
 include "ICEngine.php";
 
-$myCar = new Car("Orange", "Dacia", 2022, 19200, 15, 2.2);
+$myCar = new Car("Orange", "Dacia", 2022, 19390, 15, 2.2, "Electric");
 
 
-// $electric = new ElectricMotor(960, "electricity", 0.9);
-// echo $electric->power;
+print "some {$myCar->brand} some other text";
+// print_r($myCar);
 
-$regularEngine = new ICEngine(960, "gasoline", 0.7);
-echo $regularEngine->power;
+abstract class Fruit {
+  function __construct() {
+    echo "ssv";
+  }
+}
